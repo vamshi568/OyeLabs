@@ -1,6 +1,6 @@
 import mysql2 from "mysql2";
 import express from "express";
-
+import bodyParser from 'body-parser'
 const conction = mysql2.createConnection(
   //establish connection to the database that have in my local michine
   {
@@ -12,7 +12,7 @@ const conction = mysql2.createConnection(
 );
 const app = express(); //initializeing express instance
 const port = 3000; //default port
-
+app.use(bodyParser.json());
 app.listen(port, () => {
   console.log("listening on port 3000");
   conction.connect((err) => {

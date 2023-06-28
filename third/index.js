@@ -33,7 +33,7 @@ const customers = [
   },
   {
     email: "santosh11@yopmail.com",
-    name: "santosh",
+    name: "santo",
   },
   
 ];

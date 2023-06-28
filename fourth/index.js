@@ -9,3 +9,4 @@ const student = {
 };
 
 const newObject = { ...person, ...student }; // the newObject will give the all the properties of object person and student
+console.log(newObject)
